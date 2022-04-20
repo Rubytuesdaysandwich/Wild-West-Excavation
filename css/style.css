@@ -1,0 +1,165 @@
+body {
+  font-family: ;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6 {
+}
+/* AFFECTS LOGO ON NAVBAR */
+.llc-logo {
+  width: 50px;
+  height: 50px;
+  margin: 16px;
+}
+/* AFFECTS LOGO ON NAVBAR */
+/* contact page */
+
+/* Contact .description*/
+.description {
+  text-align: center;
+}
+/* end contact .description */
+.contactform {
+  margin: 16px;
+}
+
+#formContainer > div {
+  float: left;
+  width: 50%;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+#formContainer label {
+  color: red;
+}
+
+#formContainer input {
+  text-align: center;
+}
+
+#messageDiv {
+  text-align: center;
+}
+
+#messageDiv label {
+  color: red;
+  text-align: center;
+}
+
+#formContainer {
+  max-width: 800px;
+  margin: auto;
+}
+
+#name {
+  font-family: "Raleway", sans-serif;
+  width: 300px;
+  padding: 30px;
+  background: #fff;
+  margin: 50px auto;
+  text-align: center;
+  /*    float: left*/
+}
+
+#subject {
+  font-family: "Raleway", sans-serif;
+  width: 300px;
+  padding: 30px;
+  background: #fff;
+  margin: 50px auto;
+  text-align: center;
+  /*    float: right;*/
+}
+
+#number {
+  font-family: "Raleway", sans-serif;
+  width: 300px;
+  padding: 30px;
+  background: #fff;
+  margin: 50px auto;
+  text-align: center;
+  clear: both;
+  /*    float: left;*/
+}
+
+#email {
+  font-family: "Raleway", sans-serif;
+  width: 300px;
+  padding: 30px;
+  background: #fff;
+  margin: 50px auto;
+  text-align: center;
+  /*    float: right;*/
+}
+
+h4 {
+  clear: both;
+  text-align: center;
+}
+
+.button_next {
+  margin: auto;
+  display: block;
+  margin-bottom: 50px;
+}
+
+#message {
+  height: 200px;
+  border: 1px solid black;
+  margin-bottom: 25px;
+  max-width: 800px;
+  margin: auto;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  font: 16px "Raleway", sans-serif;
+  height: 45px;
+}
+
+/* contact page */
+
+/* footer */
+/* scocail icons */
+.social-icons .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #383c3f;
+  color: rgb(243, 241, 241);
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+.social-icons .social-icon:last-child {
+  margin-right: 0;
+}
+.social-icons .social-icon:hover {
+  background-color: #2ebd5e;
+}
+.dev-icons {
+  font-size: 2rem;
+}
+/* end social icons */
+/* end footer */
