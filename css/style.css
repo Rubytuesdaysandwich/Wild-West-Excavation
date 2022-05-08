@@ -1,8 +1,13 @@
 body {
-  font-family: ;
-  font-size: 16px;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.596);
 }
-
+/* headers */
 h1,
 h2,
 h3,
@@ -10,6 +15,71 @@ h3,
 h4,
 h5,
 h6 {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-family: "Radio Canada", sans-serif;
+}
+/* end headers */
+/* paragraph tags */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 10px;
+  margin-right: 1px;
+}
+
+/* end .paragraph tags */
+/* buttons on home page services section */
+.get-quote-but {
+  color: white;
+  background-color: darkgreen;
+  border-radius: 20px;
+  width: 150px;
+  height: auto;
+  margin: 16px;
+  border: solid green 5px;
+}
+.get-quote-but > a {
+  color: white;
+  text-decoration: none;
+}
+.get-quote-but:hover {
+  border: blue solid 5px;
+}
+/* end buttons on home page services section */
+/* styling for section headers and centering */
+.section-header-services {
+  position: static;
+  margin-left: 50%;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+.about-us-section-header {
+  position: static;
+  margin-left: 50%;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+/* images on HOME page start */
+
+.container {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.images-of-work {
+  margin: 15px;
+  width: 300px;
+  height: auto;
+  float: auto;
+}
+/* images on main page end */
+footer {
+  background-color: black;
+  color: white;
 }
 /* AFFECTS LOGO ON NAVBAR */
 .llc-logo {
@@ -57,7 +127,7 @@ h6 {
   max-width: 800px;
   margin: auto;
 }
-
+/* full name line */
 #name {
   font-family: "Raleway", sans-serif;
   width: 300px;
@@ -65,9 +135,9 @@ h6 {
   background: #fff;
   margin: 50px auto;
   text-align: center;
-  /*    float: left*/
 }
-
+/* end. full name line */
+/* subject line */
 #subject {
   font-family: "Raleway", sans-serif;
   width: 300px;
@@ -75,9 +145,9 @@ h6 {
   background: #fff;
   margin: 50px auto;
   text-align: center;
-  /*    float: right;*/
 }
-
+/* end .subject line */
+/* phone number line */
 #number {
   font-family: "Raleway", sans-serif;
   width: 300px;
@@ -86,9 +156,9 @@ h6 {
   margin: 50px auto;
   text-align: center;
   clear: both;
-  /*    float: left;*/
 }
-
+/*end .phone number line */
+/* email line */
 #email {
   font-family: "Raleway", sans-serif;
   width: 300px;
@@ -96,20 +166,27 @@ h6 {
   background: #fff;
   margin: 50px auto;
   text-align: center;
-  /*    float: right;*/
 }
-
+/* end. email line */
+/* message header */
 h4 {
   clear: both;
   text-align: center;
 }
-
+/* end .message header */
+/* efects send message button */
 .button_next {
   margin: auto;
   display: block;
   margin-bottom: 50px;
 }
-
+input.button_next {
+  background-color: green;
+  color: white;
+  border-radius: 4px;
+  border-style: none;
+}
+/* end .button_next efects send message button */
 #message {
   height: 200px;
   border: 1px solid black;
@@ -136,30 +213,40 @@ select {
   height: 45px;
 }
 
-/* contact page */
+/* contact page ends*/
 
 /* footer */
 /* scocail icons */
+.social-media-header {
+  display: flex; /*You can also reach us on our other platforms as well.*/
+  justify-content: end;
+  margin-right: 10px;
+}
+.social-icons {
+  display: flex; /* sets the icons to the end of the footer*/
+  justify-content: end;
+}
 .social-icons .social-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; /*effects the positionin of the icon in the bubble*/
+  align-items: center; /* effects the positionin of the icon in the bubble on the Y AXIS*/
+  justify-content: center; /*effects the positionin of the icon in the bubble on the X AXIS*/
   height: 3.5rem;
   width: 3.5rem;
   background-color: #383c3f;
   color: rgb(243, 241, 241);
   border-radius: 100%;
   font-size: 1.5rem;
-  margin-right: 1.5rem;
+  margin: 0.5rem;
 }
 .social-icons .social-icon:last-child {
-  margin-right: 0;
+  margin-right: 1rem;
 }
+
 .social-icons .social-icon:hover {
-  background-color: #2ebd5e;
+  background-color: #2ebd5e; /*on hover changes the bacckground of the circle green*/
 }
 .dev-icons {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 /* end social icons */
 /* end footer */

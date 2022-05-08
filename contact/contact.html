@@ -40,9 +40,10 @@
       <!--navbar title section-->
       <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-dark">
         <!--gives color to navbar and makes the navigation bar sticky-->
-        <Img class="llc-logo" src="../imgs/WildWestExcavationLLC_LOGO.png"> <span><a class="navbar-brand text-white" href="#"
+        <Img class="llc-logo" src="../imgs/logo/WildWestExcavationLLC_LOGO.png"> <span><a class="navbar-brand text-white" href="#"
           >Wild West Excavation LLC</a
         ></span> </Img>
+        <a class="navbar-brand text-white" href="#">CONTACT</a>
         <button
           class="navbar-toggler bg-white text-white"
           type="button"
@@ -67,20 +68,11 @@
               <a class="nav-link text-white" href="../index/index.html">Home</a>
             </li>
             <!--end .home navigation-->
+            <!-- reviews navigations -->
             <li class="nav-item">
-              <!--about navigation-->
-              <a class="nav-link text-white" href="../about/about.html"
-                >About</a
-              >
+              <a class="nav-link text-white" href="../reviews/reviews.html">Reviews</a>
             </li>
-            <!--end .about navigation-->
-            <!--start services navigation-->
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../services/services.html"
-                >services</a
-              >
-            </li>
-            <!--end .services navigation-->
+            <!-- end .reviews navigations -->
             <!--contact navigation-->
             <li class="nav-item">
               <a class="nav-link text-white" href="#">Contact us</a>
@@ -124,13 +116,16 @@
     <!--------- == Message Forms == ---->
 
     <div id="contactUs">
-      <form action="" name="contact">
+      <form action="https://formsubmit.co/rueben.durfee@gmail.com" method="POST" enctype="application/x-www-form-urlencoded" name="contact-form" class="form">
         <div id="formContainer">
           <div>
+            <input type="hidden"
+            name="new-email"
+            value="NEW EMAIL FROM WILDWEST EXCAVTION LLC CONTACT PAGE">
             <input
               class="full-name"
               type="text"
-              name="name"
+              name="fullname"
               placeholder="Full Name"
             />
           </div>
@@ -154,7 +149,7 @@
             <input
               class="email-adress"
               type="email"
-              name="emailAddress"
+              name="emailaddress"
               placeholder="Email Address"
             />
           </div>
@@ -174,7 +169,7 @@
     <!--end container-->
     <footer>
       <section class="socail-media-icons">
-        <h3>You can also reach us on our other platforms as well.</h3>
+        <h6 class="social-media-header">You can also reach us on our other platforms as well.</h6>
         <div class="social-icons">
           <a
             class="social-icon"
@@ -189,6 +184,12 @@
             ><i class="fab fa-facebook-f"></i
           ></a>
         </div>
+        <!-- <nav>
+          <ul>
+           
+          </ul>
+        </nav> -->
+        <P>Wild-West-Excavation-LLC Established November 30,2018</P>
       </section>
     </footer>
     <!--===================================script section========================================-->
@@ -210,4 +211,8 @@
       crossorigin="anonymous"
     ></script>
   </body>
+  <script src="../js/jquery.js" ;></script>
+  <script src="../js/jquery.validate.js" ;></script>
+  <script src="../js/form-validation.js" ;></script>
+  <script src="../js/script.js" ;></script>
 </html>

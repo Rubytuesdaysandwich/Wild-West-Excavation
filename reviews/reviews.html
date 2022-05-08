@@ -24,12 +24,60 @@
     <!--css link-->
     <link rel="stylesheet" href="../css/style.css" />
     <!--end css link-->
-
     <title>Wild West Excavation</title>
     <style>
       .dropdown-toggle::after {
         content: none;
+        background-color: white;
+        /* section review box parameters*/
       }
+      .review{
+        margin-top: 100px;
+        margin-bottom:100px ;
+        margin-left: 200px;
+        margin-right: 200px;
+        outline-style: double;
+      }
+      #message-reviews{
+        
+        border: 1px solid black;
+
+ 
+      }
+       /*end review box */
+      /* star rating */
+      .star-rating-container{
+      margin:0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      }
+      .star-rating{
+        user-select: none;
+        
+      }
+      .star{
+        font-size: 3rem;
+        color:black;
+        background-color: unset;
+        border: none;
+      }
+      
+      .star:focus{
+        outline: none;
+      }
+
+      
+      .start:hover{
+        cursor: pointer;
+      }
+      .star
+      /* star rating end */
+
     </style>
     <!--acts as background image-->
 
@@ -40,9 +88,10 @@
       <!--navbar title section-->
       <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-dark">
         <!--gives color to navbar and makes the navigation bar sticky-->
-        <Img class="llc-logo" src="../imgs/WildWestExcavationLLC_LOGO.png"> <span><a class="navbar-brand text-white" href="#"
+        <Img class="llc-logo" src="../imgs/logo/WildWestExcavationLLC_LOGO.png"> <span><a class="navbar-brand text-white" href="#"
           >Wild West Excavation LLC</a
         ></span> </Img>
+        <a class="navbar-brand text-white" href="#">REVIEWS</a>
         <button
           class="navbar-toggler bg-white text-white"
           type="button"
@@ -62,21 +111,16 @@
           <!--puts elements at end of navbar and allows it to collapse-->
           <!--navbar list items-->
           <ul class="navbar-nav img-fluid">
-            
+
             <li class="nav-item">
               <!--home navigation-->
               <a class="nav-link text-white" href="../index/index.html">Home</a>
             </li>
             <!--end .home navigation-->
-            <li class="nav-item">
-              <!--about navigation-->
-              <a class="nav-link text-white" href="#">About</a>
-            </li>
-            <!--end .about navigation-->
             <!--start services navigation-->
             <li class="nav-item">
               <a class="nav-link text-white" href="../services/services.html"
-                >services</a
+                >Reviews</a
               >
             </li>
             <!--end .services navigation-->
@@ -110,25 +154,35 @@
       </nav>
     </header>
     <!--==========================mainn body section===================-->
-    <h1>Welcome to wild west excavation about us page</h1>
+    <P>Note this page will contain customer reviews as the page is further developed
+    services and about us section have been moved to the home page </P>
+    
+  <section class="review">
+    <div class="star-rating-container">
+      <h1 class="rating_heading" style="margin-top:5px ;">5 star rating</h1>
+      <div class="star-rating">
+        <p>how was your experience?</p>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <p class="current_rating">0 of 5</p>
+      <hr>
+      <input id="message-reviews" type="text" name="message-reviews" />
+      </div>
 
 
 
-    <P>Note for about page started November 30,2018</P>
 
-
-
-
-
-
-
+</section>
 
 
 
 
     <footer>
       <section class="socail-media-icons">
-        <h3>You can also reach us on our other platforms as well.</h3>
+        <h6 class="social-media-header">You can also reach us on our other platforms as well.</h6>
         <div class="social-icons">
           <a
             class="social-icon"
@@ -143,6 +197,12 @@
             ><i class="fab fa-facebook-f"></i
           ></a>
         </div>
+        <!-- <nav>
+          <ul>
+           
+          </ul>
+        </nav> -->
+        <P>Wild-West-Excavation-LLC Established November 30,2018</P>
       </section>
     </footer>
     <!--===================================script section========================================-->
@@ -163,5 +223,6 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/reviews-script.js"></script>
   </body>
 </html>
